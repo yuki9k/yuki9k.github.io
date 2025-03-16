@@ -1,3 +1,28 @@
-body {
-  font-family: monospace;
+:root {
+  /*colors */
+  --color-white: white;
+  --color-blue: #357ded;
+
+  /*tokens*/
+  --color-text: var(--color-white);
+  --color-a: var(--color-blue);
 }
+
+body {
+  color: var(--color-text);
+  background-image: url("/assets/misc072.gif");
+  font-family: "Fahkwang", sans-serif;
+}
+
+a {
+  color: var(--color-a);
+  background-color: black;
+  width: fit-content;
+  /*text-decoration: none;*/
+}
+
+/* Start https://www.cursors-4u.com */
+* {
+  cursor: url(https://cur.cursors-4u.net/cursors/cur-11/cur1057.ani),
+    url(https://cur.cursors-4u.net/cursors/cur-11/cur1057.png), auto !important;
+} /* End https://www.cursors-4u.com */

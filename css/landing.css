@@ -1,0 +1,43 @@
+body {
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  height: 500px;
+  width: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 12px;
+}
+
+main > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-text);
+}
+
+main > div > a {
+  color: var(--color-text);
+}
+
+main > div:nth-child(1) {
+  background: url("/assets/purp037.jpg");
+}
+
+main > div:nth-child(2) {
+  background: url("/assets/nvim.png");
+}
+
+main > div:nth-child(3) {
+  background: url("/assets/hammer.png");
+}
+
+main > div:nth-child(4) {
+  background: url("/assets/missing_texture.png");
+}
